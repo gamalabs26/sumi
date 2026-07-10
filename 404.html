@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — SUMI</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='82' font-size='84'>墨</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:#e9ddc6;color:#1b1712;
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:24px;overflow:hidden;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23f)'/%3E%3C/svg%3E");
+  }
+  .blot{width:min(300px,56vw);height:min(264px,50vw);margin-bottom:-1vh;filter:drop-shadow(0 24px 40px rgba(27,23,18,.35))}
+  .blot .drip{transform-box:fill-box;transform-origin:top;animation:drip 3.4s ease-in-out infinite}
+  @keyframes drip{0%,70%{transform:scaleY(1)}85%{transform:scaleY(1.14)}100%{transform:scaleY(1)}}
+  h1{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:clamp(4rem,13vw,8rem);letter-spacing:.04em;line-height:1;color:#1b1712;position:relative;z-index:2}
+  .lead{font-family:"Shippori Mincho B1",serif;font-size:clamp(1.1rem,3.4vw,1.5rem);color:#b23a2b;margin-top:8px}
+  .sub{color:#6f6656;font-size:.9rem;letter-spacing:.04em;margin-top:12px;max-width:34ch}
+  a.volver{
+    margin-top:34px;display:inline-block;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;
+    border:1.5px solid #1b1712;padding:12px 30px;border-radius:1px;color:#1b1712;text-decoration:none;
+    transition:background .3s,color .3s;
+  }
+  a.volver:hover{background:#1b1712;color:#e9ddc6}
+</style>
+</head>
+<body>
+  <svg class="blot" viewBox="0 0 400 360" aria-hidden="true">
+    <defs>
+      <filter id="ink" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.02 0.03" numOctaves="3" seed="11" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+    <g filter="url(#ink)" fill="#1b1712">
+      <ellipse cx="200" cy="150" rx="150" ry="118"/>
+      <rect class="drip" x="188" y="150" width="26" height="150" rx="13"/>
+      <circle cx="201" cy="312" r="16"/>
+      <circle cx="120" cy="70" r="26"/>
+      <circle cx="300" cy="96" r="20"/>
+    </g>
+  </svg>
+  <h1>404</h1>
+  <p class="lead">Este trazo se salió del papel.</p>
+  <p class="sub">La página que buscabas no llegó a secar. Vuelve a la mesa.</p>
+  <a class="volver" href="/">Volver al taller</a>
+</body>
+</html>
