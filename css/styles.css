@@ -46,7 +46,7 @@ strong{font-weight:700;color:var(--sumi)}
   pointer-events:none;z-index:5;opacity:0;transition:opacity .55s ease;
   will-change:transform;
 }
-body.ink-on .ink-cursor{opacity:.52}
+body.ink-on .ink-cursor{opacity:.72}
 
 /* ---------- B · títulos pintados por el pincel ---------- */
 .brush{position:relative}
@@ -143,7 +143,7 @@ h1 em,h2 em{font-style:normal;font-weight:600;color:var(--humo)}
   transform:scale(0);opacity:0;pointer-events:none;
   transition:transform .8s cubic-bezier(.2,.7,.25,1), opacity .55s;
 }
-.obra:hover .splot,.obra:focus .splot{transform:scale(1.5);opacity:.30}
+.obra:hover .splot,.obra:focus .splot{transform:scale(1.9);opacity:.5}
 .obra figcaption{padding:18px 4px 0}
 .obra h3{font-family:var(--display);font-weight:700;font-size:1.34rem;letter-spacing:.02em}
 .obra figcaption>p{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bermellon);margin-top:6px}
